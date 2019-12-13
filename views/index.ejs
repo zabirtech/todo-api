@@ -1,0 +1,62 @@
+<html>
+
+<head>
+    <title> Todo api </title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet">
+    <link href="/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h2> Todo challenge </h2>
+
+        <form action="/addtask" method="POST">
+
+            <input type="text" name="newtask" placeholder="add new task">
+            <button> Add Task </button>
+
+
+            <h2> Added Task </h2>
+
+            <% for( var i = 0; i < task.length; i++){ %>
+                <li><input type="checkbox" name="check" value="<%= task[i] %>" />
+                    <%= task[i] %>
+                </li>
+                <% } %>
+
+                    <button formaction="/removetask" type="submit" id="top"> Remove </button>
+
+
+        </form>
+
+        <form action="/updatetask" method="POST">
+
+
+
+            <h2>Updated Task</h2>
+            <input type="text" name="updatetask" placeholder="update task">
+            <% for( var i = 0; i < update.length; i++){ %>
+                <li><input type="checkbox" name="check" value="<%= update[i] %>" />
+                    <%= update[i] %>
+                </li>
+                <% } %>
+                    <button formaction="/updatetask" type="submit" id="top"> Update </button>
+                    <button formaction="/removetask" type="submit" id="top"> Remove </button>
+        </form>
+
+        <h2> Updated task </h2>
+
+        <% for(var i = 0; i < update.length; i++){ %>
+            <li><input type="checkbox" checked>
+                <%= update[i] %>
+            </li>
+            <% } %>
+
+
+
+
+    </div>
+
+</body>
+
+</html>

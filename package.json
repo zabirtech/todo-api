@@ -1,0 +1,34 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zabirtech/todo-api.git"
+  },
+  "keywords": [
+    "todo",
+    "simple",
+    "api"
+  ],
+  "author": "Sabir",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zabirtech/todo-api/issues"
+  },
+  "homepage": "https://github.com/zabirtech/todo-api#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "mongoose": "^5.8.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
